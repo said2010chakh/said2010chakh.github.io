@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAlusta - Jaguar E-Type</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #121212; color: #ffffff; line-height: 1.6; }
+        header { background-color: #1a1a1a; padding: 20px 10%; border-bottom: 2px solid #e50914; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; color: #ffffff; text-transform: uppercase; text-decoration: none; }
+        .logo span { color: #e50914; }
+        .back-btn { color: #cccccc; text-decoration: none; font-size: 16px; font-weight: 600; text-transform: uppercase; border: 1px solid #e50914; padding: 8px 16px; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background-color: #e50914; color: #ffffff; }
+        .detail-container { padding: 60px 10%; display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1400px; margin: 0 auto; }
+        .detail-image img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #282828; }
+        .detail-info h1 { font-size: 42px; margin-bottom: 10px; text-transform: uppercase; }
+        .subtitle { color: #e50914; font-size: 18px; font-weight: 600; margin-bottom: 30px; text-transform: uppercase; }
+        .description { color: #cccccc; margin-bottom: 40px; }
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
+        .specs-table tr { border-bottom: 1px solid #282828; }
+        .specs-table td { padding: 12px 0; font-size: 16px; }
+        .specs-table td:first-child { color: #888; font-weight: 600; width: 40%; } .specs-table td:last-child { color: #ffffff; text-align: right; }
+        .gallery-section { padding: 0 10% 60px 10%; max-width: 1400px; margin: 0 auto; }
+        .gallery-title { font-size: 24px; margin-bottom: 20px; text-transform: uppercase; border-left: 4px solid #e50914; padding-left: 10px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .gallery-grid img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; border: 1px solid #282828; }
+        footer { background-color: #0a0a0a; padding: 40px 10%; text-align: center; color: #555; border-top: 1px solid #1a1a1a; }
+        @media (max-width: 768px) { .detail-container { grid-template-columns: 1fr; } .gallery-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Auto<span>Alusta</span></a>
+        <a href="index.html" class="back-btn">&larr; Takaisin</a>
+    </header>
+    <main class="detail-container">
+        <div class="detail-image"><img src="E-TYPE%201.jpg" alt="Jaguar E-Type"></div>
+        <div class="detail-info">
+            <h1>Jaguar E-Type</h1>
+            <div class="subtitle">The Beautiful British Legend</div>
+            <div class="description"><p>Once described by Enzo Ferrari as the most beautiful car ever made, the Jaguar E-Type defines 1960s British automotive royalty. It perfectly blended high-end performance with jaw-dropping styling.</p></div>
+            <table class="specs-table">
+                <tr><td>Moottori</td><td>3.8L Inline-6</td></tr>
+                <tr><td>Huippunopeus</td><td>n. 240 km/h</td></tr>
+                <tr><td>Aikakausi</td><td>1961 - 1975</td></tr>
+            </table>
+        </div>
+    </main>
+    <section class="gallery-section">
+        <h3 class="gallery-title">Lisäkuvat</h3>
+        <div class="gallery-grid">
+            <img src="ETYPE_1_SISA.jpg" alt="Sisäkuva">
+            <img src="ETYPE_1_TAKA.jpg" alt="Takakuva">
+            <img src="ETYPE_1_YKSITYISKOHTA.jpg" alt="Yksityiskohta">
+        </div>
+    </section>
+    <footer><p>&copy; 2026 AutoAlusta.</p></footer>
+</body>
+</html>

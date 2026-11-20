@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAlusta - PREMIUM CARS</title>
+    <style>
+        /* Yleiset tyylit ja tumma teema */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigointipalkki */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #e50914;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #e50914;
+		}
+        .back-btn:hover {
+            background-color: #e50914;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: color 0.3s;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #e50914;
+        }
+
+        /* Hero-otsikko-osio */
+        .hero {
+            padding: 100px 10%;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+            border-bottom: 1px solid #282828;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Autokategoriat ja ristikko */
+        .main-content {
+            padding: 60px 10%;
+        }
+
+        .category-section {
+            margin-bottom: 80px;
+            scroll-margin-top: 100px;
+        }
+
+        .category-title {
+            font-size: 32px;
+            border-left: 5px solid #e50914;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .car-card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #282828;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .car-card:hover {
+            transform: translateY(-5px);
+            border-color: #e50914;
+        }
+
+        /* Siisti linkitystyyli korteille, joka poistaa alleviivaukset */
+        .car-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .car-info {
+            padding: 25px;
+        }
+
+        .car-info h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .car-info p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Alatunniste */
+        footer {
+            background-color: #0a0a0a;
+            padding: 40px 10%;
+            text-align: center;
+            color: #555;
+            font-size: 14px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        /* Mobiilioptimointi */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            nav ul {
+                margin-top: 15px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+	    <!-- Ylävalikko -->
+    <header>
+        <div class="logo">Auto<span>Alusta</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Up</a></li>
+                <li><a href="#jeep">Jeep</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#klassikot">Klassikot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pääotsikko-osio -->
+    <section class="hero">
+        <h1>PREMIUM CARS</h1>
+    </section>
+
+    <!-- Pääsisältö alkaa -->
+    <main class="main-content">
+
+        <!-- KATEGORIA 1: JEEP -->
+        <section id="jeep" class="category-section">
+            <h2 class="category-title">Jeep & Offroad</h2>
+            <div class="car-grid">
+                
+                <!-- Jeep Wrangler -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/JEEP%20WRANGLER%20INFORMATION.html" class="car-link">
+                        <img src="JEEP%201.jpg" alt="Jeep Wrangler">
+                        <div class="car-info">
+                            <h3>Jeep Wrangler</h3>
+                            <p>The Jeep Wrangler is one of the world's most iconic off-road vehicles, renowned for its uncompromising all-terrain capability, boxy design, and fully removable body parts.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Jeep Gladiator -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/JEEP%20GLADIATOR%20INFORMATION.html" class="car-link">
+                        <img src="JEEP%202.jpg" alt="Jeep Gladiator">
+                        <div class="car-info">
+                            <h3>Jeep Gladiator</h3>
+                            <p>The Jeep Gladiator is a unique and eye-catching mid-size pickup truck that seamlessly combines the legendary off-road capability of the Wrangler with a truck bed.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Jeep Recon -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/JEEP%20RECON.html" class="car-link">
+                        <img src="JEEP%203.jpg" alt="Jeep Recon">
+                        <div class="car-info">
+                            <h3>Jeep Recon</h3>
+                            <p>The Jeep Recon is Jeep's brand-new, first-ever dedicated all-electric off-roader (BEV) built directly for the electric era.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KATEGORIA 2: SPORT -->
+        <section id="sport" class="category-section">
+            <h2 class="category-title">Sport & Suorituskyky</h2>
+            <div class="car-grid">
+                
+                <!-- McLaren 750S -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/MCLAREN%20750S.html" class="car-link">
+                        <img src="MCLAREN%201.jpg" alt="McLaren 750S">
+                        <div class="car-info">
+                            <h3>McLaren 750S</h3>
+                            <p>The McLaren 750S is the quintessential British supercar, serving as the lighter, more powerful, and even more refined successor to the acclaimed 720S.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Ferrari 296 GTB -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/FERRARI%20296GTB.html" class="car-link">
+                        <img src="ferrari.jpg" alt="Ferrari 296 GTB">
+                        <div class="car-info">
+                            <h3>Ferrari 296 GTB</h3>
+                            <p>The Ferrari 296 GTB redefines the concept of excitement behind the wheel. Combining a powerful mid-mounted V6 engine with plug-in hybrid technology.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Porsche GT3 RS -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/PORSCHE%20GT3%20RS.html" class="car-link">
+                        <img src="PORSCHE.jpg" alt="Porsche GT3 RS">
+                        <div class="car-info">
+                            <h3>Porsche GT3 RS</h3>
+                            <p>The Porsche 911 GT3 RS is a street-legal race car engineered for maximum aerodynamic performance and pure motorsport precision.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- KATEGORIA 3: KLASSIKOT -->
+        <section id="klassikot" class="category-section">
+            <h2 class="category-title">Klassikot</h2>
+            <div class="car-grid">
+                
+                <!-- Ford Mustang -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/FORD%20MUSTANG%20(1967).html" class="car-link">
+                        <img src="FORD%20MUSTAN%20167%202.webp" alt="Ford Mustang">
+                        <div class="car-info">
+                            <h3>Ford Mustang (1967)</h3>
+                            <p>The 1967 Ford Mustang Fastback is an absolute masterpiece of American muscle car history with a powerful V8 rumble.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Jaguar E-Type -->
+                <div class="car-card">
+                    <a href="file:///C:/Users/chaksai/OneDrive%20-%20Helsingin%20kaupunki%20kasvatus%20ja%20koulutus/html/JAGUAR%20E-TYPE.html" class="car-link">
+                        <img src="JAGUAR%20E-TYPE.webp" alt="Jaguar E-Type">
+                        <div class="car-info">
+                            <h3>Jaguar E-Type</h3>
+                            <p>Once described by Enzo Ferrari as the most beautiful car ever made, it is the definitive 1960s British sports car.</p>
+                        </div>
+                    </a>
+                </div>
+
